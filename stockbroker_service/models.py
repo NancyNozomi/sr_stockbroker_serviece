@@ -5,6 +5,7 @@ import matplotlib.ticker as ptk
 from scipy.ndimage import gaussian_filter1d
 import baostock as bs
 import os
+plt.switch_backend('agg')
 
 
 class Stock(object):

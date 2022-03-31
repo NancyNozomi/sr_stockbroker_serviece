@@ -21,7 +21,6 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
-    print(sys.argv)
     glob._init()
     execute_from_command_line(sys.argv)
 

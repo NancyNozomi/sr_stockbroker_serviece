@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Adequately
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130910
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="/static/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/static/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Welcome, {{project_header}}!</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="wrapper1">
+	<div id="welcome_visual" class="container_visual">
+
+		<div class="title">
+		<h2>{{stock_name}}</h2>
+			<div id="left">
+			<img src="/static/images/.stock_period.png">
+			</div>
+			<div id="right_query">
+				<form action="query" method="post" class="content">
+					<input id="name_query" type="text" name="name" style="display:none" value="{{stock_name}}">
+					<input id="date" type="text" name="date" class="text_visual" placeholder="Date like 20220317">
+					<input type="submit" value=" Query " class="button_visual">
+				</form>
+				<form action="visual" method="post" class="content">
+					<input id="name_visual" type="text" name="name" style="display:none" value="{{stock_name}}">
+					<input type="submit" value="Return" class="button_visual">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="copyright">
+	<p>Jianan Pan, Hailong Jiang, Kailong Lu</p>
+</div>
+</body>
+</html>

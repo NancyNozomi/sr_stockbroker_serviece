@@ -42,7 +42,6 @@ class LogInController(Controller):
         )
         self.login_state = glob.get_value("usr_info").login_state
 
-
 class GetUsrInfoController(Controller):
     
     def __init__(self):
